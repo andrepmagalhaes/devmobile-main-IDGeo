@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="module" src="main.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <title>IDGeo - Teste</title>
+</head>
+<body>
+  <div class="container">
+    <p>
+      Abaixo temos alguns pontos em um plano. O polígono <strong style="color: rebeccapurple">colorido</strong> representa um mapa.
+      <br />
+      Os botões de filtro devem exibir apenas os pontos conforme suas descrições:
+    </p>
+    <div class="button-panel">
+      <button id="btn-filtro-todos" class="button selected">Mostrar todos</button>
+      <button id="btn-filtro-inside" class="button">Mostrar pontos no mapa</button>
+      <button id="btn-filtro-outside" class="button">Mostrar apenas pontos fora do mapa</button>
+    </div>
+    <svg id="map">
+    </svg>
+  </div>
+</body>
+</html>

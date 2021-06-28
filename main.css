@@ -1,0 +1,75 @@
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background: #333;
+  color: #f0f0f0;
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  min-width: 858px;
+  height: 60vh;
+  min-height: 458px;
+  background: #e0e0e0;
+  color: white;
+  border-radius: 6px;
+}
+
+.container p {
+  color: #333;
+  padding: 5px 10px;
+  font-size: 1.2em;
+  font-family: 'Open Sans';
+}
+
+#map {
+  border: 1px solid grey;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 6px;
+  background: #d0d0d0;
+}
+
+.bbox {
+  stroke-width: 2;
+  stroke: rebeccapurple;
+  fill: none;
+}
+
+.button-panel {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.button-panel .button{
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 7px 15px;
+  background: transparent;
+  border: 1px solid rebeccapurple;
+  color: rebeccapurple;
+  cursor: pointer;
+}
+
+.button-panel .button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.button-panel .button.selected {
+  outline: none;
+  color: #e0e0e0;
+  background: rebeccapurple;
+}
